@@ -25,7 +25,7 @@ fn parsing(input: &str) -> Vec<[Coord; 2]> {
     return out;
 }
 fn part1(coordinates: Vec<[Coord; 2]>) -> i32 {
-    let mut lines = vec![];
+    let mut lines = vec![];ä
     for line in coordinates {
         if line[0].x == line[1].x || line[0].y == line[1].y {
             lines.append(&mut hv_line(line));
@@ -49,7 +49,6 @@ fn count(lines: Vec<Coord>) -> i32 {
     for line in lines {
         mat[line.y][line.x] += 1;
     }
-    println!("{:?}", mat);
     let mut count = 0;
     for y in 0..1000 {
         for x in 0..1000 {

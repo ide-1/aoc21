@@ -1,4 +1,3 @@
-fn main() {
     let input = get_input();
     let lines = parse(input);
     let p1 = part1(&lines);
